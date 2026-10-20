@@ -68,4 +68,29 @@
         encodeURIComponent(body);
     });
   }
+
+  var floatBtn = document.querySelector(".whatsapp-float");
+  if (floatBtn && form && "IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(
+      function (entries) {
+        var hide = entries.some(function (entry) { return entry.isIntersecting; });
+        floatBtn.classList.toggle("is-hidden", hide);
+        floatBtn.setAttribute("aria-hidden", hide ? "true" : "false");
+        if (hide) floatBtn.setAttribute("tabindex", "-1");
+        else floatBtn.removeAttribute("tabindex");
+      },
+      { threshold: 0 }
+    );
+    observer.observe(form);
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && nav && nav.classList.contains("is-open")) {
+      nav.classList.remove("is-open");
+      if (toggle) {
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.focus();
+      }
+    }
+  });
 })();
