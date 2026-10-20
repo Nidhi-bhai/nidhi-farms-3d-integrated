@@ -5,7 +5,8 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector("#site-nav");
   var form = document.querySelector("#enquiry-form");
-  var status = document.querySelector("#form-status");
+  var whatsapp = document.querySelector("#whatsapp-enquiry");
+  var mail = document.querySelector("#mailto-fallback");
 
   function onScroll() {
     if (!header) return;
@@ -29,40 +30,42 @@
     });
   }
 
-  if (!form || !status) return;
+  function valueOf(name) {
+    if (!form || !form.elements[name]) return "";
+    return String(form.elements[name].value || "").trim();
+  }
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    if (!form.reportValidity()) return;
-
-    var data = new FormData(form);
-    var product = String(data.get("product") || "").trim();
-    var company = String(data.get("company") || "").trim();
-    var lines = [
-      "Bulk enquiry for Nidhi Farms",
-      "",
-      "Name: " + String(data.get("name") || "").trim(),
-      "Company: " + company,
-      "Email: " + String(data.get("email") || "").trim(),
-      "Country: " + String(data.get("country") || "").trim(),
-      "Product: " + product,
-      "Specification: " + (String(data.get("spec") || "").trim() || "—"),
-      "Quantity: " + String(data.get("quantity") || "").trim(),
-      "Sample requested: " + (data.get("sample") ? "Yes" : "No"),
-      "Lab report requested: " + (data.get("report") ? "Yes" : "No"),
-      "",
-      "Notes:",
-      String(data.get("message") || "").trim() || "—"
+  function enquiryLines() {
+    return [
+      "Name: " + valueOf("name"),
+      "Company: " + valueOf("company"),
+      "Country: " + valueOf("country"),
+      "Product: " + valueOf("products"),
+      "Quantity: " + valueOf("quantity"),
+      "Message: " + (valueOf("message") || "—")
     ];
+  }
 
-    var href =
-      "mailto:nidhifarmspvt@gmail.com?subject=" +
-      encodeURIComponent("Bulk enquiry: " + product + " — " + company) +
-      "&body=" +
-      encodeURIComponent(lines.join("\n"));
+  if (whatsapp && form) {
+    whatsapp.addEventListener("click", function () {
+      if (!form.reportValidity()) return;
+      var url = "https://wa.me/917013468981?text=" + encodeURIComponent(enquiryLines().join("\n"));
+      window.open(url, "_blank", "noopener");
+    });
+  }
 
-    status.textContent =
-      "Opening your email app with this enquiry addressed to nidhifarmspvt@gmail.com. If nothing opens, send the same details there directly.";
-    window.location.href = href;
-  });
+  if (mail && form) {
+    mail.addEventListener("click", function () {
+      var body = [
+        "Email: " + (valueOf("email") || "—"),
+        "Phone: " + (valueOf("phone") || "—"),
+        ""
+      ].concat(enquiryLines()).join("\n");
+      mail.href =
+        "mailto:nidhifarmspvt@gmail.com?subject=" +
+        encodeURIComponent("New B2B enquiry - Nidhi Farms website") +
+        "&body=" +
+        encodeURIComponent(body);
+    });
+  }
 })();
