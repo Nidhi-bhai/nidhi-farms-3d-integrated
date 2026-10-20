@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/sitemap.xml
