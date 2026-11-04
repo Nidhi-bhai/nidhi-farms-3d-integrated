@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/credits.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/vetiver.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/herbs.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/other-lines.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/vetiver-roots.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/vetiver-oil.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/khus-mats.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/vetiver-grass.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/ashwagandha.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/shatavari.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/moringa.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/brahmi.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/tulsi.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/credits.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>

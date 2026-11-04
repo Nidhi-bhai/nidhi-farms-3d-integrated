@@ -1,6 +1,6 @@
 # Nidhi Farms
 
-Static website for Nidhi Farms, a sourcing and wholesale supply company in Andhra Pradesh, India. The business buys herbs and other ethical products from vetted sellers and supplies bulk and export buyers.
+Static website for Nidhi Farms, a sourcing and wholesale supply company in Andhra Pradesh, India. The business buys vetiver, herbs and other ethical products from vetted sellers and supplies bulk and export buyers. It does not grow crops.
 
 Live site: https://nidhi-bhai.github.io/nidhi-farms-3d-integrated/
 
